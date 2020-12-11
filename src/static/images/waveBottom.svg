@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg31" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" version="1.1" viewBox="0 0 1080 1920" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:serif="http://www.serif.com/"><metadata id="metadata35"><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/></cc:Work></rdf:RDF></metadata>
+    <g id="g4" transform="translate(36 -8)">
+        <path id="path2" transform="translate(1.0786 31.64)" d="m286.34 2324.3c-3.247-1.3-361.9-385.22-338.42-418.21 59.932-84.21 119.06-147.83 196.74-216.37 148.8-131.31 412.47-178.7 509.15-197.59 276.79-54.06 316.64-124.43 428.91-175.89 113.32-51.93 208.17 92.1 228.72 86.31 11.15-3.15-97.8 456.77-99.13 458.7" clip-path="url(#clipPath55)" fill="url(#_Linear1)"/>
+    </g>
+    <g id="g8" transform="translate(100 94)">
+        <path id="path6" transform="translate(1.0786 31.64)" d="m286.34 2324.3c-3.247-1.3-361.9-385.22-338.42-418.21 59.932-84.21 119.06-147.83 196.74-216.37 148.8-131.31 412.47-178.7 509.15-197.59 276.79-54.06 316.64-124.43 428.91-175.89 113.32-51.93 208.17 92.1 228.72 86.31 11.15-3.15-97.8 456.77-99.13 458.7" clip-path="url(#clipPath51)" fill="url(#_Linear2)"/>
+    </g>
+    
+    <defs id="defs29">
+        <linearGradient id="_Linear1" x2="1" gradientTransform="matrix(519 1206 -902.65 388.45 469.23 1212.7)" gradientUnits="userSpaceOnUse"><stop id="stop11" stop-color="#f6f6f6" offset="0"/><stop id="stop13" stop-color="#0f80d0" offset=".22"/><stop id="stop15" stop-color="#172561" offset=".44"/><stop id="stop17" stop-color="#172561" offset="1"/></linearGradient>
+        <linearGradient id="_Linear2" x2="1" gradientTransform="matrix(595 1170 -875.7 445.34 469.23 1212.7)" gradientUnits="userSpaceOnUse"><stop id="stop20" stop-color="#f6f6f6" offset="0"/><stop id="stop22" stop-color="#0f80d0" offset=".3"/><stop id="stop24" stop-color="#172561" offset=".73"/><stop id="stop26" stop-color="#172561" offset="1"/></linearGradient>
+    <clipPath id="clipPath51"><rect id="rect53" x="-113.22" y="1234.1" width="1092.2" height="560.34"/></clipPath><clipPath id="clipPath55"><rect id="rect57" x="-49.22" y="1336.1" width="1092.2" height="560.34"/></clipPath></defs>
+</svg>

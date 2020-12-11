@@ -24,3 +24,5 @@ yarn-error.log*
 
 # my ignore list
 .directory
+package-lock.json
+.eslintcache

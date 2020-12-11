@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import React from "react";
 // import ReactDOM from 'react-dom';
-import './App.css';
+import './App.scss';
 import waveTop from '../static/images/waveTop.svg'
 import waveBottom from '../static/images/waveBottom.svg'
 import logo from "../static/images/logo.svg";

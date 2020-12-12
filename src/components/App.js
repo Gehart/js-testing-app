@@ -50,11 +50,17 @@ function StartPage(params) {
 
 class InputField extends React.Component {
   render() {
+    if (!this.props.id) {
+      // throw new Error("InputField должен содержать id")
+      console.error("InputField должен содержать id");
+    }
     return (
-      <label className='input-field'>
-        {this.props.label}
-        <input type="text" />
-      </label>
+      <div className="input-field">
+        <label htmlFor={this.props.id}>
+          {this.props.label}
+        </label>
+        <input type="text" id={this.props.id}/>
+      </div>
     );
   }
 }
@@ -66,12 +72,12 @@ class RegistrationPage extends React.Component{
       <div className="registration-page">
         <h3>Зарегистрироваться</h3>
         <form>
-          <InputField label='ФИО' />
-          <InputField label='Группа' />
-          <InputField label='Пароль' />
-          <InputField label='Email' />
+          <InputField label='ФИО' id="fio" />
+          <InputField label='Группа' id="group" />
+          <InputField label='Пароль' id="password" />
+          <InputField label='Email' id="email" />
 
-          <button type="submit" onClick={(e)=> {
+          <button className="submit-button" type="submit" onClick={(e)=> {
               e.preventDefault(); 
               console.log("Submit!");
             }

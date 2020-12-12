@@ -26,3 +26,4 @@ yarn-error.log*
 .directory
 package-lock.json
 .eslintcache
+src/components/*.css

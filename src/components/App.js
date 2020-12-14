@@ -38,12 +38,12 @@ class Button extends React.Component {
 }
 
 // страница с кнопками "Войти" и "Зарегистрироваться"
-function StartPage(params) {
+function StartPage(props) {
   return (
     <>
         <Logo />
         <Button value="Войти" onClick={()=>console.log("clicked1")} className='mb15' />
-        <Button value="Зарегистрироваться" onClick={()=>console.log("clicked2")} />
+        <Button value="Зарегистрироваться" onClick={props.nextPage} />
     </>
   );
 }
@@ -91,25 +91,50 @@ class RegistrationPage extends React.Component {
 }
 
 
-class Container extends React.Component {
-  render() {
-    return (
-      <div className="container">
-        {/* <StartPage /> */}
-        <RegistrationPage />
-      </div>
-    );
-  }
-}
+// class Container extends React.Component {
+//   render() {
+//     return (
+//       <div className="container">
+//         {/* <StartPage /> */}
+//         <RegistrationPage />
+//       </div>
+//     );
+//   }
+// }
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {page: 'StartPage'};
+  }
+
+  goToRegistrationPage() {
+    this.setState({page: 'RegistrationPage'})
+    console.log('change page');
+  }
+
   render() {
+    let page;
+    switch (this.state.page) {
+      case 'StartPage':
+        page = <StartPage nextPage={this.goToRegistrationPage.bind(this)} /> 
+        break;
+      case 'RegistrationPage':
+        page = <RegistrationPage />
+        break;
+    }
+
     return (
       <div className="App">
         <img className="wave-top" alt=' ' src={waveTop}></img>
         <img className="wave-bottom" alt=' ' src={waveBottom}></img>
         <Header />
-        <Container />
+        {/* <Container /> */}
+        <div className="container">
+          {/* <StartPage /> */}
+          {/* <RegistrationPage /> */}
+          {page}
+        </div>
       </div>
     );
   }

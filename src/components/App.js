@@ -66,17 +66,18 @@ class InputField extends React.Component {
 }
 
 // страница регистрации
-class RegistrationPage extends React.Component{
+class RegistrationPage extends React.Component {
   render() {
     return (
       <div className="registration-page">
         <h3>Зарегистрироваться</h3>
         <form>
-          <InputField label='ФИО' id="fio" />
-          <InputField label='Группа' id="group" />
-          <InputField label='Пароль' id="password" />
-          <InputField label='Email' id="email" />
-
+          <div className='fields'>
+            <InputField label='ФИО' id="fio" />
+            <InputField label='Группа' id="group" />
+            <InputField label='Пароль' id="password" />
+            <InputField label='Email' id="email" />
+          </div>
           <button className="submit-button" type="submit" onClick={(e)=> {
               e.preventDefault(); 
               console.log("Submit!");

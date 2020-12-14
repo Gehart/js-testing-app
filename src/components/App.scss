@@ -95,17 +95,24 @@ button:active, button:focus, input:focus, input:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
     width: 100%;
     padding: 0 10px;
-    // float: left;
     
+    .fields {
+      width: max-content;
+      // margin-right: calc(50% - (100px + 15rem));
+    }
+
     .input-field {
       margin: 0.4rem 0;
       // clear: both;
       // display: flex;
       align-items: center;
       text-align: right;
-      margin-right: 20%;
+      // margin-right: 20%;
+
 
       label {
         font-size: 1.2rem;
@@ -116,7 +123,7 @@ button:active, button:focus, input:focus, input:active {
       
       input {
         background: #99caeb;
-        max-width: 70%;
+        width: 15rem;
         height: 2.5rem;
         font-size: 1.2rem;
         border: 1.4px solid #000;
@@ -132,7 +139,7 @@ button:active, button:focus, input:focus, input:active {
   padding: 0.7rem 1.5rem;
   
   border-radius: 1.6rem;
-  margin-top: 10px;
+  margin-top: 20px;
   align-self: center;
   border: 1px solid #000;
   background-color: #99caeb;
